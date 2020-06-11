@@ -1,0 +1,8 @@
+server: 
+  port: 4024
+  servlet:
+    context-path: /app
+
+spring: 
+  application:
+    name: todolist-redis
