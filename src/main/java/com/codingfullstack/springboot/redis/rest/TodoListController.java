@@ -17,8 +17,8 @@ import com.codingfullstack.springboot.redis.model.ToDoList;
 public class TodoListController {
 
 	private ToDoList sample = new ToDoList(1, Arrays.asList(new ToDo(1, "Comment", false),
-			new ToDo(1, "Clap", false),
-			new ToDo(2, "Follow Author", false)), false);
+			new ToDo(2, "Clap", false),
+			new ToDo(3, "Follow Author", false)), false);
 	
 	@GetMapping
 	public ToDoList getList() {
