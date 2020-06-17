@@ -19,10 +19,32 @@
   	</dependency>
   	
   	<dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-redis</artifactId>
+    </dependency>
+    
+  	<dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
         <scope>provided</scope>
     </dependency>
     
   </dependencies>
+  
+  
+    <build>
+      <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+                <layers>
+                  <enabled>true</enabled>
+                  <includeLayerTools>true</includeLayerTools>
+                </layers>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+
 </project>

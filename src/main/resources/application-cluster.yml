@@ -8,5 +8,5 @@ spring:
     name: todolist-redis
   cache:
     type: redis
-  redis:        host: 172.18.0.2
-        port: 6379
+  redis:     cluster:       nodes:        - 172.18.0.2:6379
+       maxRedirects: 2
