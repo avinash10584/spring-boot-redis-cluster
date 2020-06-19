@@ -1,0 +1,15 @@
+server: 
+  port: 4024
+  servlet:
+    context-path: /app
+
+spring: 
+  application:
+    name: todolist-redis
+  cache:
+    type: redis
+  redis:
+    sentinel:
+      master: redis-cluster      nodes:        - 172.18.0.5:6379
+        - 172.18.0.6:6379
+        - 172.18.0.7:6379
